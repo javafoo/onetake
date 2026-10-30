@@ -153,9 +153,9 @@ export function Landing() {
               </figure>
               <figure className="col-span-3 mx-auto w-40 md:col-span-1 md:w-full">
                 <Phone className="rounded-[1.4rem] border-4">
-                  <video src="/home/reel.mp4" poster="/home/reel.jpg" autoPlay muted loop playsInline className="size-full object-cover" aria-label="After: a talking reel of Sarah, the same week." />
+                  <video src="/home/pricing.mp4" poster="/home/pricing.jpg" autoPlay muted loop playsInline className="size-full object-cover" aria-label="After: a talking reel of Sarah explaining how to price a home to sell." />
                 </Phone>
-                <figcaption className="mt-3 text-xs text-muted md:text-sm">A talking reel, same week</figcaption>
+                <figcaption className="mt-3 text-xs text-muted md:text-sm">A talking reel</figcaption>
               </figure>
             </div>
           </div>
@@ -221,7 +221,7 @@ export function Landing() {
               <p className="mt-4 text-base text-ink-soft">No tools to learn, no prompts to write. {PRODUCT_NAME} plans and writes your posts in your voice, makes them with your AI avatar, and reviews every one.</p>
               <div className="mx-auto mt-10 w-[min(64vw,250px)]">
                 <Phone>
-                  <SoundReel src="/home/pricing.mp4" poster="/home/pricing.jpg" label="A talking reel of Sarah explaining how home pricing works." />
+                  <SoundReel src="/home/reel.mp4" poster="/home/reel.jpg" label="A talking reel OneTake made for Sarah: you don't need 20% down to buy your first home." />
                 </Phone>
               </div>
             </div>
