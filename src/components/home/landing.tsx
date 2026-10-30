@@ -219,7 +219,7 @@ export function Landing() {
                 Your content, <span className="text-accent italic">ready to post every week.</span>
               </h2>
               <p className="mt-4 text-base text-ink-soft">No tools to learn, no prompts to write. {PRODUCT_NAME} plans and writes your posts in your voice, makes them with your AI avatar, and reviews every one.</p>
-              <div className="mx-auto mt-10 w-[min(64vw,250px)] md:mx-0">
+              <div className="mx-auto mt-10 w-[min(64vw,250px)]">
                 <Phone>
                   <SoundReel src="/home/pricing.mp4" poster="/home/pricing.jpg" label="A talking reel of Sarah explaining how home pricing works." />
                 </Phone>
