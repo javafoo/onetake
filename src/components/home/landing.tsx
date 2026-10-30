@@ -73,6 +73,14 @@ const OLD_NEW: [string, string][] = [
   ["Stitching captions onto clips", "Finished reels, carousels and photos"],
 ];
 
+/* Four photos of Sarah, fanned like prints on a table. */
+const FAN = [
+  { src: "/home/fan-1.jpg", alt: "Sarah seated in a living room.", tilt: "-rotate-[11deg] translate-y-4" },
+  { src: "/home/fan-2.jpg", alt: "Sarah outside a modern house.", tilt: "-rotate-[4deg]" },
+  { src: "/home/fan-3.jpg", alt: "Sarah in a kitchen, holding a folder.", tilt: "rotate-[4deg]" },
+  { src: "/home/fan-4.jpg", alt: "Sarah holding house keys in a bright living room.", tilt: "rotate-[11deg] translate-y-4" },
+];
+
 export function Landing() {
   return (
     <div className="min-h-screen bg-canvas text-ink">
@@ -139,7 +147,7 @@ export function Landing() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src="/home/carousel.jpg" alt="A carousel cover of Sarah in her car: I keep hearing renters say they need 20% down. Here is why that is a myth." className="aspect-[4/5] w-full rounded-xl object-cover shadow-[0_26px_56px_-28px_rgba(32,29,26,0.55)] ring-1 ring-ink/10" />
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/home/photo-post.jpg" alt="A photo post of Sarah: I saw them fall in love in ten minutes, then the inspector found a cracked foundation." className="aspect-[4/5] w-full rounded-xl object-cover shadow-[0_26px_56px_-28px_rgba(32,29,26,0.55)] ring-1 ring-ink/10" />
+                  <img src="/home/photo-post.jpg" alt="A photo post of Sarah in a bright living room: I saw them fall in love in ten minutes, then the inspector found a cracked foundation." className="aspect-[4/5] w-full rounded-xl object-cover shadow-[0_26px_56px_-28px_rgba(32,29,26,0.55)] ring-1 ring-ink/10" />
                 </div>
                 <figcaption className="mt-3 text-xs text-muted md:text-sm">A carousel and a photo post</figcaption>
               </figure>
@@ -183,13 +191,21 @@ export function Landing() {
                 <p className="mt-4 text-base text-ink-soft">At the beach, at your desk, on stage. B-roll clips, talking reels, carousels and photo posts, all with your face, without picking up a camera. Ask in a sentence, or let your week plan it for you.</p>
                 <p className="mt-3 text-base text-ink-soft">You keep showing up, so your audience keeps growing, while you spend your time on the work only you can do.</p>
               </div>
-              <ul className="grid grid-cols-2 gap-3 text-sm">
-                {["Photos of you anywhere", "B-roll clips", "Talking reels", "Carousels", "Quote and how-to posts", "Captions and hooks"].map((item) => (
-                  <li key={item} className="rounded-xl border border-line bg-canvas px-4 py-3 font-medium">
-                    {item}
-                  </li>
-                ))}
-              </ul>
+              <div>
+                <div className="flex justify-center px-4 pt-2 pb-8">
+                  {FAN.map((photo) => (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img key={photo.src} src={photo.src} alt={photo.alt} className={`-mx-3 aspect-[4/5] w-[27%] rounded-xl object-cover shadow-[0_18px_40px_-20px_rgba(32,29,26,0.6)] ring-4 ring-surface ${photo.tilt}`} />
+                  ))}
+                </div>
+                <ul className="grid grid-cols-2 gap-3 text-sm">
+                  {["Photos of you anywhere", "B-roll clips", "Talking reels", "Carousels", "Quote and how-to posts", "Captions and hooks"].map((item) => (
+                    <li key={item} className="rounded-xl border border-line bg-canvas px-4 py-3 font-medium">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </section>
@@ -203,6 +219,11 @@ export function Landing() {
                 Your content, <span className="text-accent italic">ready to post every week.</span>
               </h2>
               <p className="mt-4 text-base text-ink-soft">No tools to learn, no prompts to write. {PRODUCT_NAME} plans and writes your posts in your voice, makes them with your AI avatar, and reviews every one.</p>
+              <div className="mx-auto mt-10 w-[min(64vw,250px)] md:mx-0">
+                <Phone>
+                  <SoundReel src="/home/pricing.mp4" poster="/home/pricing.jpg" label="A talking reel of Sarah explaining how home pricing works." />
+                </Phone>
+              </div>
             </div>
             <ol className="relative space-y-5 border-l-2 border-accent/30 pl-6">
               {AGENT.map((item) => (
