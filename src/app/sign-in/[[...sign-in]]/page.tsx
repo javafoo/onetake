@@ -9,7 +9,7 @@ export default function SignInPage() {
   return (
     <AuthFrame
       headline="Get more clients from social media, without spending hours creating content."
-      lead="Your content, done for you by your own AI, in your voice and with your face. No filming. No editing. No prompts."
+      lead="Your content, done for you, in your voice and with your face. No filming. No editing. No prompts."
     >
       <SignIn />
     </AuthFrame>
