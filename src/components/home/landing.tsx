@@ -147,7 +147,7 @@ export function Landing() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src="/home/carousel.jpg" alt="A carousel cover of Sarah in her car: I keep hearing renters say they need 20% down. Here is why that is a myth." className="aspect-[4/5] w-full rounded-xl object-cover shadow-[0_26px_56px_-28px_rgba(32,29,26,0.55)] ring-1 ring-ink/10" />
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/home/photo-post.jpg" alt="A photo post of Sarah in a bright living room: I saw them fall in love in ten minutes, then the inspector found a cracked foundation." className="aspect-[4/5] w-full rounded-xl object-cover shadow-[0_26px_56px_-28px_rgba(32,29,26,0.55)] ring-1 ring-ink/10" />
+                  <img src="/home/photo-post.jpg" alt="A new photo of Sarah holding house keys in a bright living room." className="aspect-[4/5] w-full rounded-xl object-cover shadow-[0_26px_56px_-28px_rgba(32,29,26,0.55)] ring-1 ring-ink/10" />
                 </div>
                 <figcaption className="mt-3 text-xs text-muted md:text-sm">A carousel and a photo post</figcaption>
               </figure>
