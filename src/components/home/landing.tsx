@@ -109,7 +109,7 @@ export function Landing() {
               <h1 className="mx-auto mt-5 max-w-2xl font-display text-[2.3rem] leading-[1.05] tracking-tight text-balance sm:text-5xl md:mx-0 md:text-[3.6rem]">
                 {HOOK} <span className="text-accent italic">{HOOK_EMPHASIS}</span>
               </h1>
-              <p className="mx-auto mt-5 max-w-xl text-lg text-pretty text-ink-soft md:mx-0 md:text-xl">Your content, done for you by your own AI, in your voice and with your face.</p>
+              <p className="mx-auto mt-5 max-w-xl text-lg text-pretty text-ink-soft md:mx-0 md:text-xl">Your content, done for you, in your voice and with your face.</p>
               <p className="mx-auto mt-3 max-w-xl text-base font-medium tracking-wide text-ink md:mx-0">No filming. No editing. No prompts.</p>
               <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row md:justify-start">
                 <StartButton />
